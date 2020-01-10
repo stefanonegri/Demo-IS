@@ -15,6 +15,17 @@ Twilio account
 Follow the istructions here: https://is.docs.wso2.com/en/5.9.0/learn/deploying-the-sample-app/#deploying-the-saml2-web-app-pickup-dispatch-webapp
 
 ### Define Facebook as Identity Provider
+sample parameters:
+
+Clientid: 421682952091284
+
+Client secret: 12344545454
+
+Scope: public_profile,email
+
+User Information field: first_name,last_name,email
+
+Callback url: https://localhost:9443/commonauth
 
 ### Define Twilio as Identity Provider
 sample parameters:
