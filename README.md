@@ -39,3 +39,19 @@ HTTPHeader: Authorization: Basic QUNkNWZiZjZhM2Y4ZmExYWVhM2EyZTZiMGVkMmVjNDU5ZTo
 HTTP Payload: Body=$ctx.msg&To=$ctx.num&From=%2B15713844564
 
 ### Create a user with a valid telephone number and email (whom you have access to).
+
+## Use Case 1 - SSO
+
+## Use Case 2 - Login Salesforce via WSO2IS
+
+### a. Configure Salesforce
+- Download SAML metadata from WSO2IS:
+ 
+    Login to IS with admin
+    
+    go to IDP -> Resident -> Inbound Authentication - SAML
+    download metadata (into a file)
+    
+- Configure Salesforce
+
+  Login to Salesforce
