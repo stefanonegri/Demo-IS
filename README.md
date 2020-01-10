@@ -52,6 +52,29 @@ HTTP Payload: Body=$ctx.msg&To=$ctx.num&From=%2B15713844564
     go to IDP -> Resident -> Inbound Authentication - SAML
     download metadata (into a file)
     
-- Configure Salesforce
+- Configure Salesforce:
 
-  Login to Salesforce
+  Login to Salesforce and go to the setup page
+  
+  Go to SETTINS -> Identity -> Single Sign-on Settings and import metadata file just created (rename the Name to for example wso2is); save
+  
+ Open (not edit) the new create SSO Setting and download the metadata 
+  
+  Go to SETTINGS -> Company Settings -> My Domain, edit Authentication Configuration and change Authentication service to wso2is; Save
+ 
+### Configure WSO2IS:
+
+Login WSO2IS with admin
+
+Add new Service Provider (for example, SP name salesforce); Register
+
+Go to Inbound Auth, SAML, Configure, Import from Metatdata File Configuration, and provide the file downloaded from SF
+
+Configure claim (Subject claim URI: emailaddress).
+
+### Login to Selesforce with a WSO2IS name
+
+The user, identified by email, must be provisioned in SF as well.
+
+  
+  
